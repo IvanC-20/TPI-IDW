@@ -114,4 +114,8 @@
     padding-top: 20px;
     border-top: 1px solid #ecf0f1;
   }
+
+  .w-80 {
+    width: 80%;
+  }
   
