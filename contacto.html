@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,21 +13,40 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="institucional.html">Institucional</a></li>
     </header>
-    <main style="display: flex; flex-direction: column; align-items: center;">
-        <section>
+    <main>
+        <section id="contacto-informacion">
             <h2>Contacto</h2>
-            <p>Para consultas, reservas o más información sobre nuestros salones de eventos, no dudes en ponerte en contacto con nosotros. <br>
+            <p>Para consultas, reservas o más información sobre nuestros salones de eventos, no dudes en ponerte en contacto con nosotros.
                 Estamos aquí para ayudarte a planificar tu evento a la perfección.</p>
-
+            <br>
             <h3>Dirección:</h3>
             <p>Alem 80, Ciudad, País</p>
-
+            <br>
             <h3>Teléfono:</h3>
             <p>+54 9 1234 5678</p>
 
             <h3>Correo Electrónico:</h3>
             <p><a href="mailto:contacto@idwsa.com">contacto@idwsa.com</a></p>
         </section>
+        <section id="contacto-formulario">
+            <form>
+              <div class="row">
+                <label class="required" for="name">Nombre y Apellido:</label><br />
+                <input id="name" class="input" name="name" type="text" value="" size="60" /><br />
+              </div>
+              <div class="row">
+                <label class="required" for="email">Email:</label><br />
+                <input id="email" class="input" name="email" type="text" value="" size="60" /><br />
+              </div>
+              <div class="row">
+                <label class="required" for="message">Mensaje:</label><br />
+                <textarea id="message" class="input" name="message" rows="7" cols="60"></textarea><br />
+              </div>
+                <input id="submit_button" type="submit" value="Send email" />
+            </form>
+            </div>   
+        </aside>
+        
     </main>
     <footer>Todos los derechos reservados - 2025</footer>
     

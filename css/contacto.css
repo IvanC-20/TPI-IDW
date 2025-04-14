@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin: 100px;;
+}
+section {
+    width: 80%;
+}
+
+form {
+    text-align: center;
+}
+#contacto-formulario{
+    border: solid;
+}
