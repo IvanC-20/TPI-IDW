@@ -1,3 +1,5 @@
+/*----------------Estilos generales------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@
     
   }
   
-  header {
+ /* header {
     background-color: #7f9bb3;
     padding: 20px 0;
     text-align: center;
@@ -23,7 +25,9 @@
     width: 100%;
     z-index: 1000;
   }
-  
+
+/*----------------Encabezado------------*/  
+  /*
   header h1 {
     font-size: 28px;
     color: #f39c12;
@@ -32,6 +36,7 @@
     font-weight: bold;
   }
   
+
   header ul {
     list-style-type: none;
     margin-top: 15px;
@@ -56,9 +61,35 @@
     color: #7f9bb3;
     background-color: #f39c12;
   }
+
+  /*----------------Nav------------*/
+
+  /*nav{
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }*/
+  nav ul li a:hover{
+    color: #7f9bb3;
+    background-color: #f39c12;
+    border-radius: 5px;
+  }
+  nav ul li a:active{
+    color: #7f9bb3;
+    background-color: #f39c12;
+    border-radius: 5px;
+  }
+
+
+ /*----------------Contenedor principal------------*/
   
   main {
-    padding-top: 120px;
+    padding-top: 60px;
   }
   
   #galeria ul {
@@ -120,6 +151,7 @@
     color: #bdc3c7;
     margin-top: 40px;
     padding-top: 20px;
+    padding-bottom: 20px;
     border-top: 1px solid #ecf0f1;
   }
 
@@ -132,5 +164,5 @@
     flex-direction: row;
     justify-content: center;
     gap: 50px;
-    margin: 100px;;
+    margin: 10px 100px 160px 100px;
   }
