@@ -11,4 +11,4 @@ navLinks.forEach(link => {
   }
 });
 
-/*  */
+/* Marca la pagina activa, usando el dom */

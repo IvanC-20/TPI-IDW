@@ -15,7 +15,10 @@
     margin-top: 80px;
     
   }
+  /*Borro estilos sobrantes de header*/
   
+  /*----------------Nav------------*/
+
   nav ul li a:hover{
     color: #7f9bb3;
     background-color: #f39c12;
