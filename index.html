@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- CSS de AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <title>Web Reservas Salón</title>
 </head>
 
@@ -13,6 +15,17 @@
 <script src="js/nav.js"></script>
 <script src="js/bootstrap/popper.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+
+<!-- AOS Init -->
+<script defer>
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+    duration: 1000,
+    once: true
+    });
+});
+</script>
 
 <body>
     <header>
@@ -49,55 +62,58 @@
 
     <main>
 
-        <section id="galeria">
+        <section id="galeria" class="py-5">
             <div class="container">
-
-                <div class="row g-6 justify-content-center">
-
-                    <div class="col-md-4 col-12 col-sm-6 col-lg-3"><!--"col-md-4"-->
-                        <div class="card">
-                            <img src="imagenes/salon1.jpg" class="card-img-top" alt="Salon1">
-                            <div class="card-body">
-                                <h5 class="card-title">Salón 1</h5>
-                                <h6 style="color: darkgray;">Av San Martín 80</h6>
-                                <p class="card-text">Espacio amplio y luminoso, perfecto para bodas, fiestas y grandes
-                                    celebraciones. Su diseño
-                                    elegante y adaptable se ajusta a todo tipo de eventos sociales.</p>
-                                <a href="#" class="btn btn-primary">Ver más...</a>
-                            </div>
-                        </div>
+              <h2 class="text-center mb-5">Nuestros Salones</h2>
+              <div class="row g-4 justify-content-center">
+                <!-- Salón 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000">
+                  <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
+                    <img src="imagenes/salon1.jpg" class="card-img-top" alt="Salón 1" />
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-uppercase mb-3">Salón 1</h5>
+                      <h6 class="text-center text-muted mb-4">Av San Martín 80</h6>
+                      <p class="card-text text-center text-muted">Espacio amplio y luminoso, perfecto para bodas y eventos sociales.</p>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="#" class="btn btn-outline-warning shadow-lg">Ver más...</a>
+                      </div>
                     </div>
-
-                    <div class="col-md-4 col-12 col-sm-6 col-lg-3">
-                        <div class="card">
-                            <img src="imagenes/salon2.jpg" class="card-img-top" alt="Salon1">
-                            <div class="card-body">
-                                <h5 class="card-title">Salón 2</h5>
-                                <h6 style="color: darkgray;">Alem 300</h6>
-                                <p class="card-text">Espacio amplio y luminoso, perfecto para bodas, fiestas y grandes
-                                    celebraciones. Su diseño
-                                    elegante y adaptable se ajusta a todo tipo de eventos sociales.</p>
-                                <a href="#" class="btn btn-primary">Ver más...</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-12 col-sm-6 col-lg-3">
-                        <div class="card">
-                            <img src="imagenes/salon3.jpg" class="card-img-top" alt="Salon1">
-                            <div class="card-body">
-                                <h5 class="card-title">Salón 3</h5>
-                                <h6 style="color: darkgray;">Bvard Yrigoyen 1000</h6>
-                                <p class="card-text">Espacio amplio y luminoso, perfecto para bodas, fiestas y grandes
-                                    celebraciones. Su diseño
-                                    elegante y adaptable se ajusta a todo tipo de eventos sociales.</p>
-                                <a href="#" class="btn btn-primary">Ver más...</a>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-
-        </section>
+      
+                <!-- Salón 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                  <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
+                    <img src="imagenes/salon2.jpg" class="card-img-top" alt="Salón 2" />
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-uppercase mb-3">Salón 2</h5>
+                      <h6 class="text-center text-muted mb-4">Alem 300</h6>
+                      <p class="card-text text-center text-muted">Espacio adaptable y elegante para tus celebraciones más especiales.</p>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="#" class="btn btn-outline-warning shadow-lg">Ver más...</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- Salón 3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                  <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
+                    <img src="imagenes/salon3.jpg" class="card-img-top" alt="Salón 3" />
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-uppercase mb-3">Salón 3</h5>
+                      <h6 class="text-center text-muted mb-4">Bvard Yrigoyen 1000</h6>
+                      <p class="card-text text-center text-muted">Un espacio moderno ideal para grandes reuniones y eventos de todo tipo.</p>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="#" class="btn btn-outline-warning shadow-lg">Ver más...</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </section>
 
     </main>
     <footer>Todos los derechos reservados - 2025</footer>

@@ -115,3 +115,52 @@
     gap: 50px;
     margin: 10px 100px 160px 100px;
   }
+
+/* Tarjetas */
+.card {
+  position: relative;
+  border: none; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease; 
+  overflow: hidden;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05); 
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); 
+}
+
+.card img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.1); 
+}
+
+.card-body {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-body {
+  transform: translateY(-5px);
+}
+
+.card:hover {
+  border: 1px solid #fd7e14;
+}
+
+/* Animación pulsante */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
