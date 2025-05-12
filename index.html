@@ -38,10 +38,10 @@
                         </li>
 
                     </ul>
-                    <form class="d-flex" role="search">
+                    <!--<form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                    </form>-->
                 </div>
             </div>
         </nav>
@@ -50,36 +50,55 @@
     <main>
 
         <section id="galeria">
-            <ul>
+            <div class="container">
 
-                <li>
-                    <strong>Salón 1</strong> Av San Marín 80
-                    <br />
-                    <img src="imagenes/salon1.jpg" alt="Salon de eventos" width="300" />
-                    <br />
-                    <p>Espacio amplio y luminoso, perfecto para bodas, fiestas y grandes celebraciones. Su diseño
-                        elegante y adaptable se ajusta a todo tipo de eventos sociales.</p>
-                </li>
+                <div class="row g-6 justify-content-center">
 
-                <li>
-                    <strong>Salón 2</strong> Av Belgrano 90
-                    <br />
-                    <img src="imagenes/salon2.jpg" alt="Salon de eventos" width="300" />
-                    <br />
-                    <p>Un salón íntimo y acogedor, ideal para cumpleaños, encuentros familiares o eventos exclusivos con
-                        un toque personalizado.</p>
+                    <div class="col-md-4 col-12 col-sm-6 col-lg-3"><!--"col-md-4"-->
+                        <div class="card">
+                            <img src="imagenes/salon1.jpg" class="card-img-top" alt="Salon1">
+                            <div class="card-body">
+                                <h5 class="card-title">Salón 1</h5>
+                                <h6 style="color: darkgray;">Av San Martín 80</h6>
+                                <p class="card-text">Espacio amplio y luminoso, perfecto para bodas, fiestas y grandes
+                                    celebraciones. Su diseño
+                                    elegante y adaptable se ajusta a todo tipo de eventos sociales.</p>
+                                <a href="#" class="btn btn-primary">Ver más...</a>
+                            </div>
+                        </div>
+                    </div>
 
-                </li>
-                <li>
-                    <strong>Salón 3</strong> Av Sarmiento 100
-                    <br />
-                    <img src="imagenes/salon3.jpg" alt="Salon de eventos" width="300" />
-                    <br />
-                    <p>Ideal para reuniones empresariales, conferencias o eventos corporativos. Cuenta con equipamiento
-                        técnico y un ambiente sobrio y profesional.</p>
+                    <div class="col-md-4 col-12 col-sm-6 col-lg-3">
+                        <div class="card">
+                            <img src="imagenes/salon2.jpg" class="card-img-top" alt="Salon1">
+                            <div class="card-body">
+                                <h5 class="card-title">Salón 2</h5>
+                                <h6 style="color: darkgray;">Alem 300</h6>
+                                <p class="card-text">Espacio amplio y luminoso, perfecto para bodas, fiestas y grandes
+                                    celebraciones. Su diseño
+                                    elegante y adaptable se ajusta a todo tipo de eventos sociales.</p>
+                                <a href="#" class="btn btn-primary">Ver más...</a>
+                            </div>
+                        </div>
+                    </div>
 
-                </li>
-            </ul>
+                    <div class="col-md-4 col-12 col-sm-6 col-lg-3">
+                        <div class="card">
+                            <img src="imagenes/salon3.jpg" class="card-img-top" alt="Salon1">
+                            <div class="card-body">
+                                <h5 class="card-title">Salón 3</h5>
+                                <h6 style="color: darkgray;">Bvard Yrigoyen 1000</h6>
+                                <p class="card-text">Espacio amplio y luminoso, perfecto para bodas, fiestas y grandes
+                                    celebraciones. Su diseño
+                                    elegante y adaptable se ajusta a todo tipo de eventos sociales.</p>
+                                <a href="#" class="btn btn-primary">Ver más...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
     </main>
     <footer>Todos los derechos reservados - 2025</footer>
 

@@ -24,11 +24,6 @@
     background-color: #f39c12;
     border-radius: 5px;
   }
-  nav ul li a:active{
-    color: #7f9bb3;
-    background-color: #f39c12;
-    border-radius: 5px;
-  }
 
 
  /*----------------Contenedor principal------------*/
@@ -37,6 +32,7 @@
     padding-top: 60px;
   }
   
+  /*
   #galeria ul {
     width: 100%;
     text-align: center;
@@ -88,7 +84,15 @@
     margin: 5px auto 0;
     text-align: justify;
     max-width: 300px;
+  } */
+  
+  #galeria .card:hover{
+    transform: scale(1.10);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    transition-duration: 0.4s, 0.6s;
   }
+
+  
   
   footer {
     text-align: center;
