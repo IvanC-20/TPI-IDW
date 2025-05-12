@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+     <link rel="stylesheet" href="css/estilos.css">
+     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+   
+    
     <title>Web Reservas Salón</title>
 </head>
 
@@ -27,13 +28,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="institucional.html">Institucional</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
 
                     </ul>
@@ -45,41 +46,42 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section id="contacto-informacion">
-            <h2>Contacto</h2>
-            <p>Para consultas, reservas o más información sobre nuestros salones de eventos, no dudes en ponerte en
-                contacto con nosotros.
-                Estamos aquí para ayudarte a planificar tu evento a la perfección.</p>
-            <br>
-            <h3>Dirección:</h3>
-            <p>Alem 80, Ciudad, País</p>
-            <br>
-            <h3>Teléfono:</h3>
-            <p>+54 9 1234 5678</p>
+    <main class="container text-start">
+        <div class="row align-items-start">
+            <section id="contacto-informacion" class="col">
+                <h2>Contacto</h2>
+                <p>Para consultas, reservas o más información sobre nuestros salones de eventos, no dudes en    ponerte en
+                    contacto con nosotros.
+                    Estamos aquí para ayudarte a planificar tu evento a la perfección.</p>
+                <br>
+                <h3>Dirección:</h3>
+                <p>Alem 80, Ciudad, País</p>
+                <br>
+                <h3>Teléfono:</h3>
+                <p>+54 9 1234 5678</p>
+    
+                <h3>Correo Electrónico:</h3>
+                <p><a href="mailto:contacto@idwsa.com">contacto@idwsa.com</a></p>
 
-            <h3>Correo Electrónico:</h3>
-            <p><a href="mailto:contacto@idwsa.com">contacto@idwsa.com</a></p>
-        </section>
-        <section id="contacto-formulario">
-            <form>
-                <div class="rowLocal"><!--Cambio nombre de clase por incompat con bootstrap-->
-                    <label class="required" for="name">Nombre y Apellido:</label><br />
-                    <input id="name" class="input" name="name" type="text" value="" size="60" /><br />
-                </div>
-                <div class="rowLocal">
-                    <label class="required" for="email">Email:</label><br />
-                    <input id="email" class="input" name="email" type="text" value="" size="60" /><br />
-                </div>
-                <div class="rowLocal">
-                    <label class="required" for="message">Mensaje:</label><br />
-                    <textarea id="message" class="input" name="message" rows="7" cols="60"></textarea><br />
-                </div>
-                <input id="submit_button" type="submit" value="Send email" />
-            </form>
-            </div>
-            </aside>
-
+            </section>
+            <section id="contacto-formulario" class="col text-center">
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="floatingInput1" placeholder="John Doe">
+                        <label for="floatingInput">Nombre y Apellido</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput2" placeholder="  name@example.com">
+                        <label for="floatingInput">Dirección de Email</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Deja un comentario aquí" id="   floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Comentario</label>
+                    </div>
+                    <input class="btn btn-primary mt-2" type="button" value="Enviar"/>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>Todos los derechos reservados - 2025</footer>
 
