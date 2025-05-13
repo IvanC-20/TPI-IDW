@@ -2,13 +2,13 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <!-- CSS de AOS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <title>Web Reservas Salón</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <!-- CSS de AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <title>Web Reservas Salón</title>
 </head>
 
 <!--Carga de scripts-->
@@ -19,108 +19,112 @@
 
 <!-- AOS Init -->
 <script defer>
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
     AOS.init({
-    duration: 1000,
-    once: true
+      duration: 1000,
+      once: true
     });
-});
+  });
 </script>
 
 <body class="d-flex flex-column min-vh-100">
-    <header>
+  <header>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-4">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">IDW SA - Reserva de salón de eventos</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item me-lg-3">
-                          <a class="btn btn-warning btn-lg nav-btn-lg d-none d-lg-inline-block" href="index.html">Inicio</a>
-                          <a class="nav-link d-lg-none" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item me-lg-3">
-                          <a class="btn btn-outline-warning btn-lg nav-btn-lg d-none d-lg-inline-block" href="institucional.html">Institucional</a>
-                          <a class="nav-link d-lg-none" href="institucional.html">Institucional</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="btn btn-outline-warning btn-lg nav-btn-lg d-none d-lg-inline-block" href="contacto.html">Contacto</a>
-                          <a class="nav-link d-lg-none" href="contacto.html">Contacto</a>
-                        </li>
-                      </ul>
-                    <!--<form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>-->
-                </div>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">IDW SA - Reserva de salón de eventos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-lg-3">
+              <a class="btn btn-warning btn-lg nav-btn-lg d-none d-lg-inline-block" href="index.html">Inicio</a>
+              </br> 
+              <a class="nav-link d-lg-none p-2" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="btn btn-outline-warning btn-lg nav-btn-lg d-none d-lg-inline-block"
+                href="institucional.html">Institucional</a> 
+              <a class="nav-link d-lg-none p-2" href="institucional.html">Institucional</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-warning btn-lg nav-btn-lg d-none d-lg-inline-block"
+                href="contacto.html">Contacto</a>
+              <a class="nav-link d-lg-none p-2" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
 
-    <main class="flex-fill">
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        <section id="galeria" class="pt-2 py-5">
-            <div class="container">
-              <h2 class="text-center mb-5">Nuestros Salones</h2>
-              <div class="row g-5 justify-content-center">
-                <!-- Salón 1 -->
-                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000">
-                  <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
-                    <img src="imagenes/salon1.jpg" class="card-img-top" alt="Salón 1" />
-                    <div class="card-body">
-                      <h5 class="card-title text-center text-uppercase mb-3">Salón 1</h5>
-                      <h6 class="text-center text-muted mb-4">Av San Martín 80</h6>
-                      <p class="card-text text-center text-muted">Espacio amplio y luminoso, perfecto para bodas y eventos sociales.</p>
-                      <div class="d-flex justify-content-center mt-4">
-                        <a href="#" class="btn btn-outline-warning shadow-lg">Ver más...</a>
-                      </div>
-                    </div>
-                  </div>
+  <main class="flex-fill">
+
+    <section id="galeria" class="pt-2 py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Nuestros Salones</h2>
+        <div class="row g-5 justify-content-center">
+          <!-- Salón 1 -->
+          <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000">
+            <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
+              <img src="imagenes/salon1.jpg" class="card-img-top" alt="Salón 1" />
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase mb-3">Salón 1</h5>
+                <h6 class="text-center text-muted mb-4">Av San Martín 80</h6>
+                <p class="card-text text-center text-muted">Espacio amplio y luminoso, perfecto para bodas y eventos
+                  sociales al aire libre.</p>
+                
+                <div class="d-flex justify-content-center mt-4">
+               
+                  <a href="#" class="btn btn-outline-warning shadow-lg">Ver más...</a>
                 </div>
-      
-                <!-- Salón 2 -->
-                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-                  <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
-                    <img src="imagenes/salon2.jpg" class="card-img-top" alt="Salón 2" />
-                    <div class="card-body">
-                      <h5 class="card-title text-center text-uppercase mb-3">Salón 2</h5>
-                      <h6 class="text-center text-muted mb-4">Alem 300</h6>
-                      <p class="card-text text-center text-muted">Espacio adaptable y elegante para tus celebraciones más especiales.</p>
-                      <div class="d-flex justify-content-center mt-4">
-                        <a href="#" class="btn btn-outline-warning shadow-lg">Ver más...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-                <!-- Salón 3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                  <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
-                    <img src="imagenes/salon3.jpg" class="card-img-top" alt="Salón 3" />
-                    <div class="card-body">
-                      <h5 class="card-title text-center text-uppercase mb-3">Salón 3</h5>
-                      <h6 class="text-center text-muted mb-4">Bvard Yrigoyen 1000</h6>
-                      <p class="card-text text-center text-muted">Un espacio moderno ideal para grandes reuniones y eventos de todo tipo.</p>
-                      <div class="d-flex justify-content-center mt-4">
-                        <a href="#" class="btn btn-outline-warning shadow-lg">Ver más...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
               </div>
             </div>
-          </section>
+          </div>
 
-    </main>
-    <footer class="text-center text-muted py-4 border-top">
-         Todos los derechos reservados - 2025
-    </footer>
+          <!-- Salón 2 -->
+          <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
+              <img src="imagenes/salon2.jpg" class="card-img-top" alt="Salón 2" />
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase mb-3">Salón 2</h5>
+                <h6 class="text-center text-muted mb-4">Alem 300</h6>
+                <p class="card-text text-center text-muted">Espacio adaptable y elegante para tus celebraciones más
+                  especiales.</p>
+                <div class="d-flex justify-content-center mt-4">
+                  <a href="#" class="btn btn-outline-warning shadow-lg">Ver más...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Salón 3 -->
+          <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+            <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
+              <img src="imagenes/salon3.jpg" class="card-img-top" alt="Salón 3" />
+              <div class="card-body">
+                <h5 class="card-title text-center text-uppercase mb-3">Salón 3</h5>
+                <h6 class="text-center text-muted mb-4">Bvard Yrigoyen 1000</h6>
+                <p class="card-text text-center text-muted">Un espacio moderno ideal para grandes reuniones y eventos de
+                  todo tipo.</p>
+                <div class="d-flex justify-content-center mt-4">
+                  <a href="#" class="btn btn-outline-warning shadow-lg">Ver más...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="text-center text-muted py-4 border-top">
+    Todos los derechos reservados - 2025
+  </footer>
 
 </body>
 
