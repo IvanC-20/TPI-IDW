@@ -17,7 +17,7 @@
   }
   /*Borro estilos sobrantes de header*/
   
-  /*----------------Nav------------*/
+  /*-----------------------Nav-------------------*/
 
   nav ul li a:hover{
     color: #7f9bb3;
@@ -26,65 +26,13 @@
   }
 
 
- /*----------------Contenedor principal------------*/
+ /*----------------Contenedor principal----------*/
   
   main {
     padding-top: 60px;
   }
   
-  /*
-  #galeria ul {
-    width: 100%;
-    text-align: center;
-    border-spacing: 40px 20px;
-  }
-  
-  #galeria li {
-    width: 25%;
-    display: inline-block;
-    margin-right: 40px;
-    vertical-align: top;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #bdc3c7;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  #galeria li:last-child{
-    margin-right: 0;
-  }
-  
-  #galeria li:hover {
-    transform: scale(1.03);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-  }
-  
-  #galeria li strong {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: #7f9bb3;
-  }
-  
-  #galeria li img {
-    display: block;
-    margin: 10px auto 5px;
-    border-radius: 6px;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border: 2px solid #f39c12;
-  }
-  
-  #galeria li p {
-    font-size: 14px;
-    color: #555555;
-    margin: 5px auto 0;
-    text-align: justify;
-    max-width: 300px;
-  } */
+  /*---------------Galeria-----------------------*/
   
   #galeria .card:hover{
     transform: scale(1.10);
@@ -115,4 +63,16 @@
     gap: 50px;
     margin: 10px 100px 160px 100px;
   }
+
+  /*-----------Altura textArea---------*/
+
+  #floatingTextareaContacto{
+    height: 15rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+   #floatingTextareaContacto{
+    height: 21rem;
+  }
+}
 
