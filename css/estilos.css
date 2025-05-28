@@ -16,6 +16,8 @@ body {
 
 }
 
+html, #body-login{ height: 100%; }
+
 /*Borro estilos sobrantes de header*/
 
 /*-----------------------Nav-------------------*/
@@ -35,7 +37,7 @@ main {
 
 /*---------------Galeria-----------------------*/
 
-#galeria .card:hover {
+#galeria .card:hover, #card-login:hover, #card-salon:hover {
   transform: scale(1.10);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
   transition-duration: 0.4s, 0.6s;

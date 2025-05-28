@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <title>Ingresar</title>
+</head>
+
+
+<body id="body-login" class="d-flex align-items-center justify-content-center">
+    <div class="container col-6 col-md-6 col-lg-4">
+        <div class="row justify-content-center">
+            <div id="card-login" class="card p-4 shadow">
+                <form id="loginForm"> <!--px-4 py-3-->
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="usuario" placeholder="email@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="Password1" placeholder="Password" required>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Check-login">
+                            <label class="form-check-label" for="Check-login">
+                                Recordarme
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mb-3">Ingresar</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Registrarse</a>
+                <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</body>
+
+
+</html>
