@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <title>Altas Salón</title>
+</head>
+
+<body>
+    <div class="container col-10 col-md-10 col-lg-8">
+
+        <div id="card-salon" class="card p-3 shadow">
+
+            <form id="salonForm">
+                <a id="btnSalir" class="btn btn-danger mt-2 w-25 btn-sm" tabindex="-1" role="button"
+                    aria-disabled="true">Salir</a>
+                <div class="mb-3 p-2">
+
+                    <h1 class="p-2 text-center mb-3">Formulario de carga: nuevo salón</h1>
+                    <label for="nombreSalon" class="form-label">Nombre Salón</label>
+                    <input type="text" class="form-control" id="nombreSalon" placeholder="Nombre" required >
+                </div>
+                <div class="mb-3 p-2">
+                    <label for="direccionSalon" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccionSalon" placeholder="Dirección" required >
+                </div>
+
+                <div class="mb-3 p-2">
+
+                    <label for="formFile" class="form-label">Cargue una imagen</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+
+                <div class="mb-3 p-2">
+                    <label for="descripcionSalon" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="descripcionSalon" rows="3" required ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-50 mb-3">Guardar datos Salón</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/altaSalon.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
