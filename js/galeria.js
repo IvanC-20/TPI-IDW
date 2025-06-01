@@ -24,20 +24,24 @@ document.addEventListener("DOMContentLoaded", function () {
     let html = "";
     listaSalones.forEach((salon, index) => {
       html += `
-        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="${index * 200}">
-          <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
-            <img src="${salon.imagen || 'imagenes/default.jpg'}" class="card-img-top" alt="Imagen de ${salon.nombre}" />
-            <div class="card-body">
-              <h5 class="card-title text-center text-uppercase mb-3">${salon.nombre}</h5>
-              <h6 class="text-center text-muted mb-4">${salon.direccion}</h6>
-              <p class="card-text text-center text-muted">${salon.descripcion}</p>
-              <p class="card-text text-center fw-bold">$${salon.precio}</p>
-              <div class="d-flex justify-content-center mt-4">
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="${index * 200}">
+        <div class="card h-100 shadow-lg border-0 overflow-hidden p-3 mb-4">
+          <div class="ratio ratio-4x3">
+            <img src="${salon.imagen || 'imagenes/default.jpg'}" class="card-img-top object-fit-cover" alt="Imagen de ${salon.nombre}" />
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center text-uppercase mb-3">${salon.nombre}</h5>
+            <h6 class="text-center text-muted mb-4">${salon.direccion}</h6>
+            <p class="card-text text-center text-muted">${salon.descripcion}</p>
+            <div class="mt-auto">
+              <p class="card-text text-center fw-bold mb-3">$${salon.precio}</p>
+              <div class="d-flex justify-content-center">
                 <a href="#" class="btn btn-outline-warning shadow-lg">Ver más...</a>
               </div>
             </div>
           </div>
-        </div>`;
+        </div>
+      </div>`;
     });
   
     contenedor.innerHTML = html;
