@@ -1,0 +1,64 @@
+const listaSalones = [
+  {
+    nombre: "Salón La Aventura",
+    direccion: "Av. Imaginación 101, Ciudad Festejo",
+    descripcion: "Ideal para cumpleaños infantiles llenos de juegos, risas y color. Equipado con inflables, zona de merienda y animadores profesionales.",
+    precio: 95000,
+    imagen: "imagenes/salon1.jpg"
+  },
+  {
+    nombre: "Espacio Corporativo Éxito",
+    direccion: "Oficina Central 204, Distrito Ejecutivo",
+    descripcion: "El lugar perfecto para eventos empresariales. Tecnología de punta, catering ejecutivo y ambientación sobria para reuniones efectivas.",
+    precio: 180000,
+    imagen: "imagenes/salon2.jpg"
+  },
+  {
+    nombre: "Salón Estrella de la Fiesta",
+    direccion: "Calle Brillante 33, Villa Estilo",
+    descripcion: "Decoración premium, luces inteligentes y sonido profesional. Especial para fiestas de 15 y aniversarios inolvidables.",
+    precio: 160000,
+    imagen: "imagenes/salon3.jpg"
+  },
+  {
+    nombre: "El Rincón de la Diversión",
+    direccion: "Pasaje Alegre 55, Barrio Joven",
+    descripcion: "Perfecto para eventos juveniles. DJ en vivo, zona de karaoke y pista iluminada. ¡Nunca falta la diversión!",
+    precio: 120000,
+    imagen: "imagenes/salon4.jpg"
+  },
+  {
+    nombre: "La Terraza Celebración",
+    direccion: "Altos del Centro 77, Ciudad Vista",
+    descripcion: "Un salón al aire libre con vista panorámica, ideal para atardeceres, cenas especiales y eventos sociales elegantes.",
+    precio: 145000,
+    imagen: "imagenes/salon5.jpg"
+  },
+  {
+    nombre: "Fiesta Total Kids",
+    direccion: "Calle Diversión 123, Mundo Infantil",
+    descripcion: "Zona 100% pensada para niños: pelotero, mini pista de baile, menú infantil y animación temática.",
+    precio: 90000,
+    imagen: "imagenes/salon6.jpg"
+  },
+  {
+    nombre: "Centro de Eventos Gala",
+    direccion: "Boulevard Elegancia 456, Barrio Norte",
+    descripcion: "Diseñado para bodas, aniversarios y eventos formales. Elegancia, atención personalizada y ambiente de lujo.",
+    precio: 200000,
+    imagen: "imagenes/salon7.jpg"
+  },
+  {
+    nombre: "Salón Multiespacio IDW",
+    direccion: "Ruta 25, KM 10, Parque Industrial",
+    descripcion: "Versátil y configurable. Desde ferias hasta fiestas privadas, se adapta a cualquier tipo de evento.",
+    precio: 130000,
+    imagen: "imagenes/salon8.jpg"
+  }
+];
+
+
+
+
+// Guardar en localStorage
+localStorage.setItem("listaSalones", JSON.stringify(listaSalones));
