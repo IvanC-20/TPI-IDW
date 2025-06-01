@@ -45,5 +45,28 @@ document.addEventListener("DOMContentLoaded", function () {
     if (typeof AOS !== "undefined") {
       AOS.init();
     }
-  });
+
+    contenedor.querySelectorAll(".btn-outline-warning").forEach((btn, index) => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          const salon = listaSalones[index];
+          const modalContenido = `
+          <div class="text-center">
+            <div class="ratio ratio-4x3 mb-3">
+              <img src="${salon.imagen || 'imagenes/default.jpg'}" class="img-fluid rounded object-fit-cover" alt="${salon.nombre}">
+            </div>
+            <h5 class="mb-2">${salon.nombre}</h5>
+            <h6 class="text-muted">${salon.direccion}</h6>
+            <p class="mt-3">${salon.descripcion}</p>
+            <p class="fw-bold">$${salon.precio}</p>
+          </div>`;
+    
+          document.getElementById("modalContenido").innerHTML = modalContenido;
+    
+          const modal = new bootstrap.Modal(document.getElementById("descripcionModal"));
+          modal.show();
+        });
+    });
+  
+});
   
