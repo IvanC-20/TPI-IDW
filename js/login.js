@@ -1,6 +1,13 @@
+const cerrarSesionBtn = document.getElementById('cerrarSesionBtn');
+function cerrarSesion(event) {
+    sessionStorage.clear();
+    window.location.href = 'login.html';
+
+}
+
 if (sessionStorage.getItem('usuario')) {
     alert("Usuario logueado!!");
-    window.location.href = "altaSalon.html";
+    window.location.href = "admin.html";
 }
 document.getElementById('loginForm').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -11,8 +18,10 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     if (usuario === 'admin@admin.com' && pass === '1234') {
         sessionStorage.setItem('usuario', usuario);
         alert("Logueo exitoso!!");
-        window.location.href = "altaSalon.html";
+        window.location.href = "admin.html";
     } else {
         alert('Usuario o contraseña incorrectos!');
     }
 });
+
+
