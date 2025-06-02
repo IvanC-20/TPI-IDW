@@ -50,8 +50,8 @@ function showData() {
         html += "<td>" + element.descripcion + "</td>";
         html += "<td><img" + " style='max-width:100%' height='80px'" + " title=" + element.imagen + " src=" + element.imagen + "></td>";
         html += "<td>" + element.precio + "</td>";
-        btDelete = '<button onclick ="deleteData(' + index + ')" class="btn btn-danger w-100">Eliminar</button>';
-        btEdit = '<button onclick ="updateData(' + index + ')" class="btn btn-warning mt-1 w-100">Editar</button>';
+        btDelete = '<button type="button" onclick ="deleteData(' + index + ')" class="btn btn-danger w-100">Eliminar</button>';
+        btEdit = '<button type="button" onclick ="updateData(' + index + ')" class="btn btn-warning mt-1 w-100">Editar</button>';
         html += '<td>' + btDelete + btEdit + '</td>'
     });
     document.querySelector("#crudTable tbody").innerHTML = html;
@@ -119,7 +119,13 @@ function updateData(index) {
     document.getElementById("direccion").value = listaSalones[index].direccion;
     document.getElementById("descripcion").value = listaSalones[index].descripcion;
     document.getElementById("precio").value = listaSalones[index].precio;
-    document.getElementById("archivo").value = listaSalones[index].archivo;
+    document.getElementById("archivo").value = listaSalones[index].imagen;
+
+    // Voy siempre arriba, al formulario. Por si selecciono algún salón que se encuentra muuuy abajo en la tabla
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 
     document.querySelector("#Update").onclick = function () {
         if (validateForm() == true) {
