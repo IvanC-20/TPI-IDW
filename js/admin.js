@@ -119,7 +119,7 @@ function updateData(index) {
     document.getElementById("direccion").value = listaSalones[index].direccion;
     document.getElementById("descripcion").value = listaSalones[index].descripcion;
     document.getElementById("precio").value = listaSalones[index].precio;
-    document.getElementById("imagen").value = listaSalones[index].archivo;
+    document.getElementById("archivo").value = listaSalones[index].archivo;
 
     document.querySelector("#Update").onclick = function () {
         if (validateForm() == true) {
