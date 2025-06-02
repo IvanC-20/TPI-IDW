@@ -2,13 +2,13 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 
 
-    <title>Web Reservas Salón</title>
+  <title>Web Reservas Salón</title>
 </head>
 
 <script src="js/nav.js"></script>
@@ -16,8 +16,8 @@
 <script src="js/bootstrap/bootstrap.min.js"></script>
 
 <body class="d-flex flex-column min-vh-100">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-4">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-4">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">IDW SA - Reserva de salón de eventos</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -36,64 +36,67 @@
                 href="institucional.html">Institucional</a>
               <a class="nav-link d-lg-none p-2" href="institucional.html">Institucional</a>
             </li>
-            <li class="nav-item">
-              <a class="btn btn-warning btn-lg nav-btn-lg d-none d-lg-inline-block"
-                href="contacto.html">Contacto</a>
+            <li class="nav-item  me-lg-3">
+              <a class="btn btn-warning btn-lg nav-btn-lg d-none d-lg-inline-block" href="contacto.html">Contacto</a>
               <a class="nav-link d-lg-none p-2" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item ">
+              <a class="btn btn-outline-warning btn-lg nav-btn-lg d-none d-lg-inline-block"
+                href="admin.html">Administrar</a>
+              <a class="nav-link d-lg-none p-2" href="admin.html">Administrar</a>
             </li>
           </ul>
 
         </div>
       </div>
     </nav>
-    </header>
-    <main class="container"><!--text-start-->
-        <div class="row justify-content-center">
-            <div class="col-md-4 col-12 col-sm-12 col-lg-6">
-                <h2>Contacto</h2>
-                <p>Para consultas, reservas o más información sobre nuestros salones de eventos, no dudes en ponerte en
-                    contacto con nosotros.
-                    Estamos aquí para ayudarte a planificar tu evento a la perfección.</p>
-                <br>
-                <h3>Dirección:</h3>
-                <p>Alem 80, Ciudad, País</p>
-                <br>
-                <h3>Teléfono:</h3>
-                <p>+54 9 1234 5678</p>
+  </header>
+  <main class="container"><!--text-start-->
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-12 col-sm-12 col-lg-6">
+        <h2>Contacto</h2>
+        <p>Para consultas, reservas o más información sobre nuestros salones de eventos, no dudes en ponerte en
+          contacto con nosotros.
+          Estamos aquí para ayudarte a planificar tu evento a la perfección.</p>
+        <br>
+        <h3>Dirección:</h3>
+        <p>Alem 80, Ciudad, País</p>
+        <br>
+        <h3>Teléfono:</h3>
+        <p>+54 9 1234 5678</p>
 
-                <h3>Correo Electrónico:</h3>
-                <p><a href="mailto:contacto@idwsa.com">contacto@idwsa.com</a></p>
-            </div>
+        <h3>Correo Electrónico:</h3>
+        <p><a href="mailto:contacto@idwsa.com">contacto@idwsa.com</a></p>
+      </div>
 
-            <div class="col-md-8 col-12 col-sm-12 col-lg-6">
-                <form>
-                    <div class="form-floating mb-3">
-                        <input type="name" class="form-control" id="floatingInput1" placeholder="John Doe">
-                        <label for="floatingInput">Nombre y Apellido</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput2" placeholder="name@example.com">
-                        <label for="floatingInput">Dirección de Email</label>
-                    </div>
-                    <div class="form-floating ">
-                        <textarea class="form-control" placeholder="Deja un comentario aquí"
-                            id="floatingTextareaContacto">
+      <div class="col-md-8 col-12 col-sm-12 col-lg-6">
+        <form>
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control" id="floatingInput1" placeholder="John Doe">
+            <label for="floatingInput">Nombre y Apellido</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput2" placeholder="name@example.com">
+            <label for="floatingInput">Dirección de Email</label>
+          </div>
+          <div class="form-floating ">
+            <textarea class="form-control" placeholder="Deja un comentario aquí" id="floatingTextareaContacto">
                         </textarea>
-                        <label class="fs-5" for="floatingTextareaContacto">Comentario</label>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-warning btn-lg shadow-lg mt-4 mb-4 w-50">
-                        Enviar
-                    </button>
+            <label class="fs-5" for="floatingTextareaContacto">Comentario</label>
+          </div>
 
-                </form>
-            </div>
-        </div>
+          <button type="submit" class="btn btn-warning btn-lg shadow-lg mt-4 mb-4 w-50">
+            Enviar
+          </button>
 
-    </main>
-    <footer class="text-center text-muted py-4 border-top">
-        Todos los derechos reservados - 2025
-    </footer>
+        </form>
+      </div>
+    </div>
+
+  </main>
+  <footer class="text-center text-muted py-4 border-top">
+    Todos los derechos reservados - 2025
+  </footer>
 
 </body>
 
