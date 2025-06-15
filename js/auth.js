@@ -12,5 +12,5 @@ export async function login(usuarioParam, passParam) {
 
     }
 
-}
+};
 

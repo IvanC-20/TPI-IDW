@@ -146,3 +146,16 @@ function updateData(index) {
         document.getElementById("Update").style.display = "none";
     }
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+    const boton = document.getElementById("cerrarSesionBtn");
+
+    boton.addEventListener("click", function () {
+        const resultado = confirm("¿Seguro que desea cerrar sesion?");
+           if(resultado){
+                sessionStorage.clear();
+                window.location.href = "index.html";
+           }   
+        
+    });
+});
