@@ -17,9 +17,13 @@ import { login } from './auth.js';
                 password: pass
             };
             sessionStorage.setItem('datosUsuario', JSON.stringify(datosUsuario));
-            alert("Logueo exitoso!!");
-            window.location.href = "admin.html";
-
+            if(datosUsuario.usuario === "admin"){
+                alert(`Logueo exitoso!! - Bienvenido: ${datosUsuario.usuario}.`);
+                window.location.href = "admin.html";
+            }else{
+                alert(`Logueo exitoso!! - Bienvenido: ${datosUsuario.usuario}.`);
+                window.location.href = "index.html";
+            } 
         } else {
             alert('Usuario o contraseña incorrectos!');
         }
