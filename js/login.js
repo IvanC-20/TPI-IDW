@@ -3,7 +3,7 @@ import {login} from './auth.js';
 /*const cerrarSesionBtn = document.getElementById('cerrarSesionBtn');
 function cerrarSesion(event) {
     sessionStorage.clear();
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 
 }*/
 
@@ -19,7 +19,11 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
     const usuarioValidado = await login(usuario, pass);
     if (usuarioValidado) {
-        sessionStorage.setItem('usuario', usuario);
+        const datosUsuario = {
+            usuario: usuario,
+            password: pass
+        };
+        sessionStorage.setItem('datosUsuario', JSON.stringify(datosUsuario));
         alert("Logueo exitoso!!");
         window.location.href = "admin.html";
         
