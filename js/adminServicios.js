@@ -1,14 +1,35 @@
 let servicioEditando = null;
 
-function guardarServicio() {
+function validateServicio() {
   const id = document.getElementById("idServicio").value.trim();
   const descripcion = document.getElementById("descripcionServicio").value.trim();
   const valor = document.getElementById("valorServicio").value.trim();
 
-  if (!id || !descripcion || !valor || Number(valor) < 0) {
-    alert("Todos los campos son obligatorios y el valor debe ser mayor o igual a cero.");
-    return;
+  if (id === "") {
+    alert("Debe ingresar ID");
+    return false;
   }
+  if (descripcion === "") {
+    alert("Debe ingresar Descripción");
+    return false;
+  }
+  if (valor === "") {
+    alert("Debe ingresar Valor");
+    return false;
+  } else if (Number(valor) < 0) {
+    alert("El valor no puede ser menor que cero");
+    return false;
+  }
+
+  return true;
+}
+
+function guardarServicio() {
+  if (!validateServicio()) return;
+
+  const id = document.getElementById("idServicio").value.trim();
+  const descripcion = document.getElementById("descripcionServicio").value.trim();
+  const valor = document.getElementById("valorServicio").value.trim();
 
   let listaServicios = JSON.parse(localStorage.getItem("listaServicios")) || [];
 
@@ -23,7 +44,7 @@ function guardarServicio() {
 
   localStorage.setItem("listaServicios", JSON.stringify(listaServicios));
   mostrarServicios();
-  document.getElementById("formServicio")?.reset();
+  document.getElementById("formServicio").reset();
 }
 
 function mostrarServicios() {
@@ -38,8 +59,8 @@ function mostrarServicios() {
       <td>${servicio.descripcion}</td>
       <td>${servicio.valor}</td>
       <td>
-        <button class="btn btn-warning w-100 mb-1" onclick="editarServicio(${index})">Editar</button>
-        <button class="btn btn-danger w-100" onclick="eliminarServicio(${index})">Eliminar</button>
+        <button type="button" class="btn btn-warning w-100 mb-1" onclick="editarServicio(${index})">Editar</button>
+        <button type="button" class="btn btn-danger w-100" onclick="eliminarServicio(${index})">Eliminar</button>
       </td>
     `;
     tbody.appendChild(fila);
@@ -56,6 +77,7 @@ function eliminarServicio(index) {
 function editarServicio(index) {
   let listaServicios = JSON.parse(localStorage.getItem("listaServicios")) || [];
   const servicio = listaServicios[index];
+
   document.getElementById("idServicio").value = servicio.id;
   document.getElementById("descripcionServicio").value = servicio.descripcion;
   document.getElementById("valorServicio").value = servicio.valor;
@@ -63,12 +85,15 @@ function editarServicio(index) {
   servicioEditando = index;
   document.getElementById("Submit").style.display = "none";
   document.getElementById("Update").style.display = "block";
+
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-window.onload = mostrarServicios;
+document.getElementById("Update").onclick = guardarServicio;
 
 document.addEventListener("DOMContentLoaded", function () {
+  mostrarServicios();
+
   document.getElementById("cerrarSesionBtn").addEventListener("click", function () {
     if (confirm("¿Seguro que desea cerrar sesión?")) {
       sessionStorage.clear();

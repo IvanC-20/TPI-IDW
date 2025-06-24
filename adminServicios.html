@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Servicios</title>
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="css/admin.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Administrar Servicios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
 <body>
+
   <header>
     <nav class="navbar navbar-expand-lg bg-dark py-4 px-4">
       <div class="container">
@@ -18,7 +19,7 @@
   </header>
 
   <div class="container mt-4">
-    <form>
+    <form id="formServicio" onsubmit="guardarServicio(); return false;">
       <div class="row">
         <div class="form-group col-md-4 mb-3">
           <label for="idServicio">ID</label>
@@ -33,8 +34,8 @@
           <input type="number" class="form-control" id="valorServicio" placeholder="Ingresar Valor" required>
         </div>
         <div class="col-lg-12 mt-3">
-          <button class="btn btn-success mr-3 w-25" type="button" id="Submit" onclick="guardarServicio()">Agregar Servicio</button>
-          <button class="btn btn-primary mr-3 w-25" type="button" id="Update" style="display: none;">Actualizar Servicio</button>
+          <button class="btn btn-success mr-3 w-25" type="submit" id="Submit">Agregar Servicio</button>
+          <button class="btn btn-warning mr-3 w-25" type="button" id="Update" style="display: none;">Actualizar Servicio</button>
           <a class="btn btn-primary float-end d-lg-inline-block w-25" href="menu.html">Volver al Menú</a>
         </div>
       </div>
