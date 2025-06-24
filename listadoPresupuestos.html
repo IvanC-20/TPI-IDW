@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuestos Generados</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-light py-4 px-4">
+      <div class="container">
+        <a class="navbar-brand text-white fs-2" href="#">Presupuestos Generados</a>
+        <div>
+          <a id="cerrarSesionBtn" class="btn btn-danger float-end d-lg-inline-block w-20" style="margin-left: 20px" href="#">Cerrar Sesión</a>
+          <a class="btn btn-primary float-end d-lg-inline-block w-20" style="margin-left: 20px" href="menu.html">Volver al Menú</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered" id="presupuestosTable">
+          <thead class="table-dark">
+            <tr>
+              <th>Cliente</th>
+              <th>Fecha</th>
+              <th>Salón</th>
+              <th>Servicios</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Se llenará con JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/listadoPresupuestos.js"></script>
+</body>
+</html>

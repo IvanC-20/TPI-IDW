@@ -1,4 +1,5 @@
 cargarSalones();
+cargarServicios();
 function cargarSalones() {
   let listaSalones = [];
 
@@ -64,6 +65,116 @@ function cargarSalones() {
     localStorage.setItem("listaSalones", JSON.stringify(listaSalones));
   }
 
+}
+
+function cargarServicios() {
+  let listaServicios = [];
+
+  if (localStorage.getItem("listaServicios") == null) {
+    listaServicios = [
+      {
+        id: "S001",
+        descripcion: "Cabina de fotos con accesorios",
+        valor: 25000
+      },
+      {
+        id: "S002",
+        descripcion: "DJ con luces LED y pista iluminada",
+        valor: 55000
+      },
+      {
+        id: "S003",
+        descripcion: "Decoración temática personalizada",
+        valor: 30000
+      },
+      {
+        id: "S004",
+        descripcion: "Show de magia para todas las edades",
+        valor: 20000
+      },
+      {
+        id: "S005",
+        descripcion: "Food truck gourmet",
+        valor: 45000
+      },
+      {
+        id: "S006",
+        descripcion: "Barra de tragos con bartender show",
+        valor: 60000
+      },
+      {
+        id: "S007",
+        descripcion: "Animación con personajes infantiles",
+        valor: 28000
+      },
+      {
+        id: "S008",
+        descripcion: "Estación de selfies con aros de luz",
+        valor: 18000
+      },
+      {
+        id: "S009",
+        descripcion: "Servicio de maquillaje artístico",
+        valor: 22000
+      },
+      {
+        id: "S010",
+        descripcion: "Proyector y pantalla gigante",
+        valor: 32000
+      },
+      {
+        id: "S011",
+        descripcion: "Espectáculo de fuegos artificiales",
+        valor: 70000
+      },
+      {
+        id: "S012",
+        descripcion: "Muro de donas y candy bar personalizado",
+        valor: 28000
+      },
+      {
+        id: "S013",
+        descripcion: "Alquiler de carpa chill-out con livings",
+        valor: 55000
+      },
+      {
+        id: "S014",
+        descripcion: "Recepción con violinista en vivo",
+        valor: 30000
+      },
+      {
+        id: "S015",
+        descripcion: "Robot LED para apertura de pista",
+        valor: 45000
+      },
+      {
+        id: "S016",
+        descripcion: "Estación de glitter y body painting",
+        valor: 22000
+      },
+      {
+        id: "S017",
+        descripcion: "Set de bienvenida con merchandising",
+        valor: 18000
+      },
+      {
+        id: "S018",
+        descripcion: "Puestos de comida estilo street food",
+        valor: 32000
+      },
+      {
+        id: "S019",
+        descripcion: "Show de circo o acrobacia aérea",
+        valor: 65000
+      },
+      {
+        id: "S020",
+        descripcion: "Transmisión en vivo del evento",
+        valor: 38000
+      }
+    ];
+    localStorage.setItem("listaServicios", JSON.stringify(listaServicios));
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
