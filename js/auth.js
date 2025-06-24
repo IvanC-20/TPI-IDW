@@ -1,5 +1,6 @@
 export async function login(usuarioParam, passParam) {
     try {
+
         const response = await fetch('../utils/users.json');
         const usuarios = await response.json();
 

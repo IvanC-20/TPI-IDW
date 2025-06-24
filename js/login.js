@@ -19,7 +19,7 @@ import { login } from './auth.js';
             sessionStorage.setItem('datosUsuario', JSON.stringify(datosUsuario));
             if(datosUsuario.usuario === "admin"){
                 alert(`Logueo exitoso!! - Bienvenido: ${datosUsuario.usuario}.`);
-                window.location.href = "admin.html";
+                window.location.href = "menu.html";
             }else{
                 alert(`Logueo exitoso!! - Bienvenido: ${datosUsuario.usuario}.`);
                 window.location.href = "index.html";

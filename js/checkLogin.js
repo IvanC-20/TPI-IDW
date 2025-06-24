@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     boton.addEventListener("click", function () {
 
         const datosUsuario = JSON.parse(sessionStorage.getItem('datosUsuario'));
-        
+        console.log(datosUsuario);
         if (datosUsuario) {            
             if (datosUsuario.usuario === 'admin') {
-                window.location.href = "admin.html";
+                window.location.href = "menu.html";
             }
         } else {
            const resultado = confirm("Debe loguearse para administrar el sitio!");
