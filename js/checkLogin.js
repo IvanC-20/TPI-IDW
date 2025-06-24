@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         if (datosUsuario) {            
             if (datosUsuario.usuario === 'admin') {
-                window.location.href = "admin.html";
+                window.location.href = "menu.html";
             }
         } else {
            const resultado = confirm("Debe loguearse para administrar el sitio!");
