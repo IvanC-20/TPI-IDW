@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 fila.innerHTML = `
             
             <td> ${usuario.firstName}  ${usuario.lastName} </td>
-            <td> ${usuario.userName} </td>
+            <td> ${usuario.username} </td>
             <td> ${usuario.email}  </td>
             <td> ${usuario.phone} + </td>
             `;
                 tabla.appendChild(fila);
-                //document.querySelector("#crudTable tbody").innerHTML = html;
+                
             });
         }else{
             console.error(response.status);
@@ -29,4 +29,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     };
 
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const boton = document.getElementById("cerrarSesionBtn");
+
+    boton.addEventListener("click", function () {
+        const resultado = confirm("¿Seguro que desea cerrar sesion?");
+           if(resultado){
+                sessionStorage.clear();
+                window.location.href = "index.html";
+           }   
+        
+    });
 });
