@@ -1,6 +1,5 @@
 export async function login(usuarioParam, passParam) {
     try {
-
         const response = await fetch('https://dummyjson.com/auth/login',{
             method: 'POST',
             headers: {
@@ -11,13 +10,14 @@ export async function login(usuarioParam, passParam) {
                 password: passParam
             })
         });
+
         if(!response.ok){
             console.error("Credenciales Incorrectas");
             return false;
-        }
+        };
         
         const data = await response.json();
-        console.log('data',data);
+        console.log('data:',data);
         // const userOk = usuarios.find(u => u.usuario === usuarioParam && u.pass === passParam);
         // console.log('userOk: ' + JSON.stringify(userOk));
         // return userOk !== undefined;
