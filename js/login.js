@@ -4,6 +4,7 @@ import { login } from './auth.js';
         alert("Usuario logueado!!");
         window.location.href = "admin.html";
     }
+
     document.getElementById('loginForm').addEventListener('submit', async function (event) {
         event.preventDefault();
 
@@ -11,13 +12,16 @@ import { login } from './auth.js';
         const pass = document.getElementById('Password1').value;
 
         const usuarioValidado = await login(usuario, pass);
+        
         if (usuarioValidado) {
             const datosUsuario = {
                 usuario: usuario,
                 password: pass
             };
+            
             sessionStorage.setItem('datosUsuario', JSON.stringify(datosUsuario));
-            if(datosUsuario.usuario === "admin"){
+            console.log(usuarioValidado)
+            if(usuarioValidado=== "admin"){
                 alert(`Logueo exitoso!! - Bienvenido: ${datosUsuario.usuario}.`);
                 window.location.href = "menu.html";
             }else{
