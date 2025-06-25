@@ -1,1 +1,3 @@
-probando
+function () {
+	console.log("hola")
+}
