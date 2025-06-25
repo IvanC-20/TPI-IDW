@@ -1,12 +1,24 @@
 export async function login(usuarioParam, passParam) {
     try {
 
-        const response = await fetch('../utils/users.json');
-        const usuarios = await response.json();
+        const response = await fetch('https://dummyjson.com/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                username: usuarioParam,
+                password: passParam,
 
-        const userOk = usuarios.find(u => u.usuario === usuarioParam && u.pass === passParam);
-        console.log('userOk: ' + JSON.stringify(userOk));
-        return userOk !== undefined;
+            })
+        });
+        if (!response.ok) {
+            console.error("Credenciales inválidas!");
+            return false;
+        }
+
+        const data = await response.json();
+        console.log(data);
+        return data;
+
     } catch (error) {
         console.log("Error en la solicitud");
         return false;
@@ -14,4 +26,3 @@ export async function login(usuarioParam, passParam) {
     }
 
 };
-

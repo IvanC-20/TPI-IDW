@@ -32,9 +32,10 @@
 <body class="d-flex flex-column min-vh-100">
   <header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-4">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-4 mb-0">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">IDW SA - Reserva de salón de eventos</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon "></span>
@@ -56,20 +57,32 @@
                 href="contacto.html">Contacto</a>
               <a class="nav-link d-lg-none p-2" href="contacto.html">Contacto</a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item " id="btn-admin" >
               <a id="redireccion-l" href="#"
                 class="btn btn-outline-warning btn-lg nav-btn-lg d-none d-lg-inline-block">Administrar</a>
-              <a id="redireccion-p" class="nav-link d-lg-none p-2" href="#" >Administrar</a>
+              <a id="redireccion-p" class="nav-link d-lg-none p-2" href="#">Administrar</a>
             </li>
           </ul>
 
         </div>
       </div>
     </nav>
+
+
+
   </header>
 
   <main class="flex-fill">
+    <!-- <label id="datosLogin"></label>
+    <script>
 
+      const user = sessionStorage.getItem('usuario');
+      const role = sessionStorage.getItem('role');
+      if (user != null && role != null) {
+        const etiqueta = document.getElementById('datosLogin');
+        etiqueta.textContent = `${user} en línea, rol: ${role}`;
+      }
+    </script>-->
     <section id="galeria" class="pt-2 py-5">
       <div class="container">
         <h2 class="text-center mb-5">Nuestros Salones</h2>
@@ -101,7 +114,6 @@
   <a href="presupuesto.html" class="btn-presupuesto" id="botonPresupuesto">
     💬 Pedinos un presupuesto
   </a>
-
 </body>
 
 </html>
