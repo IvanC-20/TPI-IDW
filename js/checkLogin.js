@@ -34,19 +34,26 @@ document.addEventListener("DOMContentLoaded", function () {
         boton.addEventListener("click", function () {
 
             const role = sessionStorage.getItem('role');
-
-            if (role) {
-                if (role === 'admin') {
-                    window.location.href = "menu.html";
-                }
+        console.log(role);
+        if (role) {
+            if (role === 'admin') {
+                window.location.href = "menu.html";
             } else {
-                const resultado = confirm("Debe loguearse para administrar el sitio!");
+                const resultado = confirm(`Usted es "${role}", NO tiene permiso para administrar el sitio! - ¿Desea cerrar sessión?`);
                 if (resultado) {
-                    window.location.href = "login.html";
+                    sessionStorage.clear();
+                    alert("Sesion cerrada!")
+                    window.location.href = "index.html";
                 }
-
             }
-        });
+        } else {
+            const resultado = confirm("Debe loguearse para administrar el sitio!");
+            if (resultado) {
+                window.location.href = "login.html";
+            }
+
+        }
+    })
     });
 
 //login.html
