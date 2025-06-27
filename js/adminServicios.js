@@ -40,6 +40,11 @@ function guardarServicio() {
     document.getElementById("Update").style.display = "none";
   } else {
     listaServicios.push({ id, descripcion, valor });
+     window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth'
+    });
+
   }
 
   localStorage.setItem("listaServicios", JSON.stringify(listaServicios));
@@ -83,7 +88,7 @@ function editarServicio(index) {
   document.getElementById("valorServicio").value = servicio.valor;
 
   servicioEditando = index;
-  document.getElementById("Submit").style.display = "none";
+  document.getElementById("Submit").style.display = "block";
   document.getElementById("Update").style.display = "block";
 
   window.scrollTo({ top: 0, behavior: 'smooth' });

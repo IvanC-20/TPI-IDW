@@ -101,7 +101,7 @@ function cargarServicios() {
         id: "S006",
         descripcion: "Barra de tragos con bartender show",
         valor: 60000
-      },
+      }/*,
       {
         id: "S007",
         descripcion: "Animación con personajes infantiles",
@@ -171,7 +171,7 @@ function cargarServicios() {
         id: "S020",
         descripcion: "Transmisión en vivo del evento",
         valor: 38000
-      }
+      }*/
     ];
     localStorage.setItem("listaServicios", JSON.stringify(listaServicios));
   }
